@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 201092 */
+  src: url('../fonts/home/iconfont.eot');
+  src: url('../fonts/home/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/home/iconfont.woff') format('woff'),
+  url('../fonts/home/iconfont.ttf') format('truetype'),
+  url('../fonts/home/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: "iconfont";
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #E9E8E8;
+}
+
+.top{
+	width: 100%;
+	/*height: 44px;*/
+	height: 1.5rem;
+	background: #FAA828;
+	/*line-height: 44px;*/
+	line-height: 1.5rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.5rem;
+}
+/*.top .back{
+	float: left;
+	margin-left: 3%;
+	color: #fff;
+}
+.back:before{
+	content: "\e616";
+}*/
+.banner{
+	width: 100%;
+	height: 5rem;
+	background: url("../img/login.jpg") no-repeat;
+	background-size: contain;
+}
+
+/*登录注册开始*/
+.content{
+	width: 100%;
+	font-size: 0.6rem;
+	color: #E05E3E;
+	text-align: center;
+	/*padding: 2rem 0;*/
+}
+.content a{
+	text-decoration: none;
+}
+.content .loginIn{
+	width: 5.20rem;
+	height: 1rem;
+	border: 1px solid #E05B3C;
+	border-radius: 0.2rem;
+	margin: 0 auto;
+	line-height: 1rem;
+	color: #E6B7AC;
+}
+.content .loginUp{
+	width: 5.20rem;
+	height: 1rem;
+	border: 1px solid #E05B3C;
+	border-radius: 0.2rem;
+	margin: 0.3rem auto;
+	line-height: 1rem;
+	color: #E6B7AC;
+}
+/*登录注册结束*/
+/*其他登录方式开始*/
+.other{
+	width: 100%;
+	padding-top: 1rem;
+}
+.other .title{
+	width: 80%;
+	height: 0.5rem;
+	/*background: red;*/
+	margin: 0 auto;
+}
+.other .title .line{
+	width: 2.1rem;
+	height: 1px;
+	background: #E05B3C;
+	float: left;
+}
+.other .title .text{
+	float: left;
+	font-size: 0.3rem;
+	line-height: 0.1rem;
+}
+.other .qita{
+	/*padding-top: 0.3rem;*/
+	width: 100%;
+	float: left;
+}
+.other .qita ul{
+	display: flex;
+	justify-content: space-around;
+	font-size: 0.7rem;
+}
+.other .qita ul li{
+	width: 1.8rem;
+	height: 1.8rem;
+	/*background: orange;*/
+	text-align: center;
+	line-height: 1.8rem;
+	float: left;
+	opacity: 0.8;
+}
+.other .qita ul .xinlang:before{
+	content: "\e60f";
+}
+.other .qita ul .teng:before{
+	content: "\e63d";
+}
+.other .qita ul .weixin:before{
+	content: "\e603";
+}
+.other .qita ul .friend:before{
+	content: "\e619";
+}
+
+/*其他登录方式结束*/
+

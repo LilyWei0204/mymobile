@@ -1,0 +1,804 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 201092 */
+  src: url('../fonts/home/iconfont.eot');
+  src: url('../fonts/home/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/home/iconfont.woff') format('woff'),
+  url('../fonts/home/iconfont.ttf') format('truetype'),
+  url('../fonts/home/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: "iconfont";
+}
+
+@font-face {
+  font-family: 'icon';  /* project id 202133 */
+  src: url('../fonts/caitu/iconfont.eot');
+  src: url('../fonts/caitu/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/caitu/iconfont.woff') format('woff'),
+  url('../fonts/caitu/iconfont.ttf') format('truetype'),
+  url('../fonts/caitu/iconfont.svg#iconfont') format('svg');
+}
+.icon{
+	font-family: "icon";
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	font-size: 0.35rem;
+}
+body{
+	overflow: hidden;
+}
+img{
+	padding: 0 ;
+	margin: 0;
+	border: 0;
+}
+
+/********************首页开始**************************************/
+#index{
+	width: 100%;
+	height: 100%;
+}
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 44px;
+	bottom: 48px;
+	left: 0;
+	width: 100%;
+	/*background: #ccc;*/
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.scroller #swiper-container2{
+	width: 100%;
+}
+/*导航栏开始*/
+.nav{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 44px;
+	background: #f9a828;
+	position: relative;
+	font-size: 0.5rem;
+}
+.nav .left{
+	width: 0.5rem;
+	height:0.5rem;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	margin-left: 3%;
+	/*font-size: 0.8rem;*/
+	color: #fff;
+	line-height: 0.5rem;
+}
+.nav .left span:before{
+	content: "\e606";
+}
+
+.nav .center{
+	width: 200px;
+	height: 30px;
+	/*background: red;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+.nav .center input{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	border-radius: 1rem;
+} 
+.nav .right{
+	width: 0.5rem;
+	height: 0.5rem;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 3%;
+	/*font-size: 0.8rem;*/
+	color: #fff;
+	line-height: 0.5rem;
+}
+.nav .right span:before{
+	content: "\e637";
+}
+/*导航栏结束*/
+
+#swiper-container2{
+	width: 100%;
+}
+
+/*banner开始*/
+#index .banner{
+	width: 100%;
+	height: 2.85rem;
+	background: url(../img/ban1.jpg) no-repeat;
+	background-size:contain;
+}
+/*banner结束*/
+
+
+/*副导航开始*/
+.fu-nav{
+	width: 100%;
+	/*height: 3.28rem;*/
+}
+.fu-nav ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.fu-nav ul li{
+	width: 2.68rem;
+	height: 2rem;
+	background: #E9E9E9;
+	float: left;
+	position: relative;
+}
+.fu-nav ul:nth-child(2) li{
+	border-top: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+}
+.fu-nav ul:nth-child(1) li:nth-child(1),.fu-nav ul:nth-child(1) li:nth-child(2),.fu-nav ul:nth-child(1) li:nth-child(3),.fu-nav ul:nth-child(2) li:nth-child(1),.fu-nav ul:nth-child(2) li:nth-child(2),.fu-nav ul:nth-child(2) li:nth-child(3){
+	border-right: 1px solid #d7d7d7;
+}
+
+.fu-nav ul li .tu{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 0.3rem;
+	width: 1.06rem;
+	height: 50%;
+	border-radius: 50%;	
+}
+.fu-nav ul li .tu a img{
+	width: 100%;
+}
+.fu-nav ul li .title{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	/*background: red;*/
+	font-size: 0.35rem;
+	text-align: center;
+}
+.price{
+	background: #d92e30;
+}
+.tuan{
+	background:#de641b ;
+}
+.food{
+	background:#e57445 ;
+}
+.play{
+	background:#a5d15b;
+}
+.hosptal{
+	background:#fa6969 ;
+}
+.close{
+	background:#9ab1fe;
+}
+.bash{
+	background:#5ec9f6;
+}
+.more{
+	background:#c8cdce;
+}
+/*副导航结束*/
+
+
+/*猜你喜欢开始*/
+.guess{
+	width: 100%;
+}
+.guess .title{
+	width: 100%;
+	height: 38px;
+	background: #f9a828;
+	line-height: 38px;
+	font-size: 0.5rem;
+}
+.guess .title .left{
+	float: left;
+	margin-left: 30px;
+}
+.guess .title .left .like{
+	padding-left: 0.2rem;
+	color: #FA676D;
+}
+.guess .title .left .like:before{
+	content: "\e605";
+}
+.guess .title .left span:nth-child(1){
+	color:#fff;
+}
+.guess .title .right{
+	float: right;
+	margin-right: 30px;
+}
+.guess .title .right span{
+	color: #F0DECA;
+} 
+
+.guess .content{
+	width: 100%;
+}
+.guess .content .pic{
+	width: 95%;
+	margin: 0 auto;
+	
+}
+.guess .content .pic ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.guess .content .pic .one{
+	margin-top: 14px;
+	/*margin-bottom: 18px;*/
+}
+.guess .content .pic .two{
+	margin-bottom: 14px;
+}
+.guess .content .pic .one li{
+	/*width: 33.333%;*/
+	width: 30%;
+	height: 2.8rem;
+}
+.guess .content .pic .one li img{
+	width: 100%;
+}
+.guess .content .pic .two li{
+	/*width: 2.38rem;*/
+	width: 23%;
+	height: 2rem;
+}
+.guess .content .pic .two li img{
+	width: 100%;
+}
+/*猜你喜欢结束*/
+
+/***************首页结束******************************/
+
+
+/***************服务页开始****************************************/
+#fuwu{
+	width: 100%;
+	height: 100%;
+	/*background: red;*/
+}
+#fuwu .iconfont{
+	line-height: 0.2rem;
+}
+#fuwu .nav .right span{
+	line-height: 0.5rem;
+}
+.fuwu_ban{
+	width: 100%;
+	height: 4.2rem;
+	background: red;
+}
+.mui-table-view li{
+	color: #ADADAD;
+	font-size:0.3rem;
+	line-height: 0.8rem;
+}
+.mui-table-view li .icon{
+	width: 0.8rem;
+	height:0.8rem;
+	border-radius: 50%;
+	float: left;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.5rem;
+	color: #fff;
+	margin-right: 0.3rem;
+}
+.huli{
+	background: #EECC26;
+}
+.huli:before{
+	content: "\e88d";
+}
+.baojian{
+	background: #E0593C;
+}
+.baojian:before{
+	content: "\e64b";
+}
+.yiliao{
+	background: #DE9E33;
+}
+.yiliao:before{
+	content: "\e676";
+}
+.online{
+	background: #E66165;
+}
+.online:before{
+	content: "\e63b";
+}
+.jiyang{
+	background: #6F58DF;
+}
+.jiyang:before{
+	content: "\e634";
+}
+/******************服务业结束*********************************************/
+
+
+/******************操作开始*********************************************/
+#jia{
+	width: 100%;
+	height: 100%;
+	background: pink;
+}
+
+
+
+
+
+
+/******************操作结束*********************************************/
+/******************购物车开始*********************************************/
+#shop{
+	width: 100%;
+	height: 100%;
+	background: #E9E8E8;
+	display: none;
+}
+#shop .shop_top{
+	width: 100%;
+	height: 44px;
+	line-height: 44px;
+	background: #F9A828;
+	font-size: 0.5rem;
+	color: #fff;
+	position: relative;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+#shop .shop_top .back{
+	float: right;
+	padding-right: 0.3rem;
+}
+#shop .shop_top .back:before{
+	content: "\e637";
+}
+
+#shop .shop_top .title{
+	width: 2rem;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	font-size: 0.45rem;
+}
+#shop .show{
+	width: 100%;
+	height: 83%;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 44px;
+}
+#shop .st_list{
+	width: 100%;
+	height: 2.8rem;
+	background: #fff;
+	/*overflow: hidden;*/
+	margin-bottom: 0.5rem;
+}
+#shop .st_list .mui-input-row .edit{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin:0.2rem auto ;
+	right: 0.3rem;
+}
+a{
+	color: #706F6F;
+}
+#shop .st_list .store{
+	width: 95%;
+	margin: 0 auto;
+}
+#shop .st_list .store .shop_img{
+	width: 1.22rem;
+	height: 1.3rem;
+	/*background: red;*/
+	margin-left: 0.3rem;
+	float: left;
+}
+#shop .st_list .store .shop_img img{
+	width: 100%;
+	
+}
+#shop .st_list .store .shop_right{
+	width: 70%;
+	float: right;
+	height: 100%;
+	margin-right: 0.3rem;
+}
+#shop .st_list .store .shop_right p{
+	margin-bottom: 0;
+}
+#shop .st_list .store .shop_right p:nth-of-type(1){
+	margin-top: 0.1rem;
+}
+#shop .st_list .store .shop_right span:nth-child(1){
+	font-size: 0.35rem;
+}
+#shop .st_list .store .shop_right span:nth-child(2){
+	font-size: 0.3rem;
+}
+#shop .st_list .store .shop_right .jiage{
+	/*float: left;*/
+	font-size: 0.4rem;
+	color: #EF7523;
+}
+#shop .st_list .store .shop_right .shuliang{
+	float: right;
+	/*line-height: 0.3rem;*/
+}
+
+/******************购物车结束*********************************************/
+
+
+
+
+/******************我的开始*********************************************/
+@font-face {
+  font-family: 'font';  /* project id 204017 */
+  src: url('../fonts/order/iconfont.eot');
+  src: url('../fonts/order/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/order/iconfont.woff') format('woff'),
+  url('../fonts/order/iconfont.ttf') format('truetype'),
+  url('../fonts/order/iconfont.svg#iconfont') format('svg');
+}
+.font{
+	font-family: 'font';
+}
+#my{
+	width: 100%;
+	height: 100%;
+	background: #E9E8E8;
+}
+#my_show{
+	width: 100%;
+	height: 90%;
+	overflow: hidden;
+	position: absolute;
+}
+#my .my_ban{
+	width: 100%;
+	height: 4rem;
+	background: url("../img/ban3.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.my_top{
+	width: 100%;
+	height: 0.5rem;
+	position: absolute;
+	left: 0;
+	top: 0.5rem;
+	/*background: red;*/
+	color: #fff;
+}
+.my_left{
+	float: left;
+	padding-left: 0.3rem;
+
+}
+.my_left a span{
+	font-size: 0.6rem;
+	line-height: 0.4rem;	
+}
+.my_left a span,.my_right a span{
+
+	color: #fff;
+}
+.my_right{
+	float: right;
+	padding-right: 0.3rem;
+}
+.my_circle{
+	width: 1.8rem;
+	height: 1.8rem;
+	border-radius: 50%;
+	background: orange;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 0.8rem;
+}
+.my_btn{
+	width: 2.3rem;
+	height: 1rem;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 0.3rem;
+	font-size: 0.3rem;
+	text-align: center;
+}
+.my_btn button,.my_btn .name a span{
+	color: #fff;
+}
+.message{
+	width: 100%;
+	height: 1.4rem;
+	background: #fff;
+	font-size: 0.4rem;
+	line-height: 1.4rem;
+	text-align: center;
+	position: relative;
+}
+.message .ziliao{
+	width: 49.5%;
+	height: 100%;
+	float: left;
+	
+}
+.message .line{
+	float: left;
+	width: 1px;
+	height: 80%;
+	border-left: 1px solid #ccc;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.message .zhanghao{
+	width: 49.5%;
+	height: 100%;
+	float: left;
+}
+.my_order{
+	width: 100%;
+	height: 3.2rem;
+	background: #fff;
+	margin: 0.4rem 0;
+}
+.my_title{
+	width: 95%;
+	height: 0.8rem;
+	margin: 0 auto;
+	line-height: 1rem;
+	border-bottom: 1px solid #C0C0C0;
+	font-size: 0.4rem;
+}
+.my_order ul{
+	padding-top: 0.5rem;
+	width: 95%;
+	height: 2.4rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.my_order ul li{
+	width: 20%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.my_order ul .font{
+	
+	line-height: 1rem;
+	font-size: 0.8rem;
+}
+.payment:before{
+	content: "\e607";
+}
+.shipping{
+	font-weight: bold;
+}
+.shipping:before{
+	content: "\e61d";
+}
+.goods:before{
+	content: "\e610";
+}
+.evaluation{
+	font-weight: bold;
+}
+.evaluation:before{
+	content: "\e603";
+}
+.refund:before{
+	content: "\e6be";
+}
+
+.my_other{
+	width: 100%;
+	height: 5rem;
+	background: #fff;
+	margin: 0 auto;
+}
+.my_other .other_s{
+	width: 90%;
+	margin: 0 auto;
+}
+.my_other .other_s ul{
+	width: 100%;
+	height: 40%;
+	float: left;
+}
+.my_other .other_s ul:nth-child(1){
+	padding-top: 0.3rem;
+}
+.my_other .other_s ul:nth-child(1) li:nth-child(1),.my_other .other_s ul:nth-child(1) li:nth-child(2),.my_other .other_s ul:nth-child(1) li:nth-child(3),.my_other .other_s ul:nth-child(1) li:nth-child(4){
+	border-bottom: 1px solid #D7D7D7;
+}
+.my_other ul li{
+	width: 25%;
+	height: 190%;
+	border-right: 1px solid #D7D7D7;
+	float: left;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 0.8rem;
+}
+.my_other ul:nth-child(1) li:nth-child(4){
+	border-right: none;
+}
+.my_other ul li .font{
+	line-height: 1.5rem;
+}
+.my_share:before{
+	content: "\e621";
+	color: #6F58DF;
+}
+.my_coupons:before{
+	content: "\e661";
+	color: #E56165;
+}
+.my_jifen:before{
+	content: "\e63e";
+	color: #DE9F33;
+}
+.my_shoucang:before{
+	content: "\e626";
+	color: #E05A3C;
+}
+.my_focus:before{
+	content: "\e714";
+	color: #EECC25;
+}
+.my_fankui:before{
+	content: "\eb90";
+	color: #6F58DF;
+}
+.my_kefu:before{
+	content: "\e67c";
+	color: #E56165;
+}
+
+/******************我的结束*********************************************/
+
+
+/**********************菜单栏开始******************************/
+/*底部选项卡开始*/
+.tab{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 1.2rem;
+	background: #F5F6F3;
+	border-top: 1px solid #CFCFCF ;
+}
+.tab ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.tab ul li .iconfont{
+	line-height: 0.8rem;
+}
+.tab ul li{
+	width: 1.3rem;
+	float: left;
+	text-align: center;
+}
+
+.active-nav{
+	color: #F9A828;
+}
+.tab .iconfont{
+	font-size: 0.5rem;
+}
+
+.tab  .home:before{
+	content: "\e610";
+}
+
+
+.tab  .fuwu:before{
+	content: "\e600";
+}
+.tab  .caozuo{
+	padding-top: 0.3rem;
+	font-size: 0.9rem;
+	color: #FFCA61;
+}
+.tab  .caozuo:before{
+	content: "\e622";
+}
+
+.tab  .car:before{
+	content: "\e612";
+}
+
+.tab  .my:before{
+	content: "\e66e";
+}
+/*底部选项卡结束*/
+
+/*********************************菜单栏结束************************************/
+

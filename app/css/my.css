@@ -1,0 +1,239 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 201092 */
+  src: url('../fonts/home/iconfont.eot');
+  src: url('../fonts/home/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/home/iconfont.woff') format('woff'),
+  url('../fonts/home/iconfont.ttf') format('truetype'),
+  url('../fonts/home/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: "iconfont";
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	font-size: 0.35rem;
+}
+body{
+	overflow: hidden;
+}
+
+/*主要内容开始*/
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	bottom: 48px;
+	left: 0;
+	width: 100%;
+	background: #E9E8E8;
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.scroller #swiper-container2{
+	width: 100%;
+}
+
+.banner{
+	width: 100%;
+	height: 5rem;
+	background: url("../img/ban3.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+}
+.banner .top{
+	position: absolute;
+	top: 1rem;
+	width: 100%;
+	height: 1rem;
+	/*background: red;*/
+	color: #fff;
+}
+.banner .top .left{
+	float: left;
+	padding-left: 0.3rem;
+}
+.banner .top .right{
+	float: right;
+	padding-right: 0.3rem;
+}
+.xinxi:before{
+	content: "\e637";
+}
+.banner .touxiang{
+	width: 2rem;
+	height: 2rem;
+	background: plum;
+	border-radius: 50%;
+	position: absolute;
+	left: 0;
+	right:0;
+	margin: 0 auto;
+	top: 0.35rem;
+}
+.banner .btn{
+	width: 2.3rem;
+	/*height: 1.3rem;*/
+	/*background: red;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 1.2rem;
+}
+.banner .btn button{
+	color: #fff;
+}
+.banner .renzheng{
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 0.35rem;
+	font-size: 0.4rem;
+}
+a{
+	list-style: none;
+	color: #eee;
+}
+
+/**************我的资料***************/
+.message{
+	width: 100%;
+	height: 69px;
+	background: #fff;
+}
+.message .ziliao,.message .zhanghao{
+	width: 49.5%;
+	height: 100%;
+	float: left;
+	text-align: center;
+	font-size: 0.4rem;
+	line-height: 69px;
+	
+}
+.message .ziliao a,.message .zhanghao a{
+	color: #626262;
+	font-size: 0.6rem;
+}
+.message .line{
+	width: 1px;
+	height: 80%;
+	border-right: 1px solid #ccc;
+	float: left;
+	margin-top: 0.2rem;
+}
+/*主要内容结束*/
+
+
+
+
+
+/*底部选项卡开始*/
+.tab{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 1.5rem;
+	background: #F5F6F3;
+	border-top: 1px solid #CFCFCF ;
+}
+.tab .swiper-container-nav{
+	width: 100%;
+	height: 100%;
+	/*line-height: 1rem;*/
+}
+.tab  .swiper-nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.tab .swiper-container-nav .swiper-nav .nav_footer{
+	width: 2.1rem;
+	height: 100%;
+	/*background: red;*/
+	float: left;
+	text-align: center;
+	
+}
+.tab .swiper-container-nav .swiper-nav .nav_footer .iconfont{
+	line-height: 30px;
+}
+.active-nav{
+	color: #F9A828;
+}
+.tab .home{
+	font-size: 0.8rem;
+	padding-top: 0.1rem;
+}
+.tab  .home:before{
+	content: "\e610";
+}
+
+.tab  .fuwu{
+	font-size: 0.7rem;
+	padding-top: 0.1rem;
+}
+.tab  .fuwu:before{
+	content: "\e600";
+}
+.tab  .caozuo{
+	padding-top: 0.3rem;
+	font-size: 1.3rem;
+	color: #FFCA61;
+}
+.tab  .caozuo:before{
+	content: "\e622";
+}
+
+.tab .car{
+	font-size: 0.7rem;
+}
+.tab  .car:before{
+	content: "\e612";
+}
+.tab  .my{
+	font-size: 0.7rem;
+}
+.tab  .my:before{
+	content: "\e66e";
+}
+/*底部选项卡结束*/
+

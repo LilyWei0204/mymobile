@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <script src="js/mui.min.js"></script>
+    <script src="js/zepto.min.js"></script> 
+	<script src="js/swiper.jquery.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/index.js"></script>
+	
+    
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();    	
+/****************滚动条********************/
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', {
+//				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true,
+				click:true
+			});
+			/*myScroll1 = new IScroll('#wrapper1', {
+//				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});*/
+		}
+		
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+</head>
+<body onload="loaded()">
+	
+<div id="index" class="menu">
+	<div class="nav" id="header">
+		<div class="left">
+			<span class="iconfont"></span>
+		</div>
+		<div class="center">
+			<input type="text" placeholder="搜索"/>
+		</div>
+		<div class="right">
+			<span class="iconfont"></span>
+		</div>
+	</div>
+	<div id="wrapper">
+		<div class="scroller" id="scroller">
+			<div class="banner">
+		
+			</div>
+			<div class="fu-nav">
+				<ul>
+					<li>
+						<div class="tu price">
+							<a href="price.html">
+								<img src="img/price.png" alt="" />
+							</a>
+						</div>
+						<div class="title">特价秒杀</div>						
+					</li>
+					<li>
+						<div class="tu tuan">
+							<a href="price.html">
+								<img src="img/tuan.png" alt="" />
+							</a>
+						</div>
+						<div class="title">团购</div>
+					</li>					
+										
+					<li>
+						<div class="tu food">
+							<a href="price.html">
+								<img src="img/food.png" alt="" />
+							</a>
+						</div>
+						<div class="title">食物</div>
+					</li>
+					<li>
+						<div class="tu play">
+							<a href="price.html">
+								<img src="img/play.png" alt="" />
+							</a>
+						</div>
+						<div class="title">玩具</div>
+					</li>
+					
+				</ul>
+				<ul>
+					<li>
+						<div class="tu hosptal">
+							<a href="price.html">
+								<img src="img/hosptal.png" alt="" />
+							</a>
+						</div>
+						<div class="title">医疗</div>
+					</li>
+					<li>
+						<div class="tu close">
+							<a href="price.html">
+								<img src="img/close.png" alt="" />
+							</a>
+						</div>
+						<div class="title">服装</div>
+					</li>
+					<li>
+						<div class="tu bash">
+							<a href="price.html">
+								<img src="img/bash.png" alt="" />
+							</a>
+						</div>
+						<div class="title">洗浴</div>
+					</li>
+					<li>
+						<div class="tu more">
+							<a href="price.html">
+								<img src="img/more.png" alt="" />
+							</a>
+						</div>
+						<div class="title">更多</div>
+					</li>
+				</ul>
+			</div>
+			<div class="guess">
+				<div class="title">
+					<div class="left">
+						<span>猜你喜欢</span>
+						<span class="iconfont like"></span>
+					</div>
+					<div class="right">
+						<a href=""><span>更多>></span></a>
+					</div>
+				</div>
+				<div class="content">
+					<div class="pic">
+						<ul class="one">
+							<li>
+								<a href="">
+									<img src="img/guess1.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess2.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess3.jpg" alt="" />
+								</a>
+							</li>
+						</ul>
+						<ul class="two">
+							<li>
+								<a href="">
+									<img src="img/guess4.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess5.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess6.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess7.jpg" alt="" />
+								</a>
+							</li>
+						</ul>
+						
+						<ul class="two">
+							<li>
+								<a href="">
+									<img src="img/guess4.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess5.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess6.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess7.jpg" alt="" />
+								</a>
+							</li>
+						</ul>
+						
+						<ul class="one">
+							<li>
+								<a href="">
+									<img src="img/guess1.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess2.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess3.jpg" alt="" />
+								</a>
+							</li>
+						</ul>
+						<ul class="two">
+							<li>
+								<a href="">
+									<img src="img/guess4.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess5.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess6.jpg" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<img src="img/guess7.jpg" alt="" />
+								</a>
+							</li>
+						</ul>
+		
+					</div>
+				</div>
+			</div>
+			
+		</div>	
+	</div>
+	
+</div>
+	
+<div id="fuwu" class="menu">
+	<div class="nav" id="header">
+		<div class="left iconfont">
+			<div class="mui-icon mui-icon-location"></div>
+		</div>
+		<div class="center">
+			<input type="text" placeholder="搜索商家"/>
+		</div>
+		<div class="right iconfont">
+			<span class="iconfont"></span>
+		</div>
+	</div>
+	<div class="fuwu_ban">
+		<img src="img/ban2.jpg" alt="" />
+	</div>
+	<ul class="mui-table-view">
+	    <li class="mui-table-view-cell">
+	    	<div class="icon huli"></div>
+	    	基本护理
+	    </li>
+	    <li class="mui-table-view-cell">
+	    	<div class="icon baojian"></div>
+	    	营养保健
+	    </li>
+	    <li class="mui-table-view-cell">
+	    	<div class="icon yiliao"></div>
+	    	医疗
+	    </li>
+	    <li class="mui-table-view-cell">
+	    	<div class="icon online"></div>
+	    	专家在线
+	    </li>
+	    <li class="mui-table-view-cell">
+	    	<div class="icon jiyang"></div>
+	    	宠物寄养
+	    </li>
+	</ul>
+</div>
+
+
+
+<div id="jia" class="menu">
+	
+</div>
+
+
+
+<div id="shop" class="menu">
+	<div id="header" class="shop_top">				
+		<div class="title">
+			<span>购物车(6)</span>
+		</div>
+		<span class="iconfont back "></span>
+	</div>
+	<div class="show">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<!--这里放置真实显示的DOM内容-->
+				<div class="st_list">
+					<div class="mui-input-row mui-checkbox mui-left">
+					  <label>狗狗一家亲 &nbsp;></label>
+					  <input name="checkbox1" value="Item 1" type="checkbox">
+					  <div class="edit">
+					  	<a href="javascript:;">领劵</a>
+					  	|
+					  	<a href="javascript:;">编辑</a>
+					  </div>
+					</div>
+					<div class="store">
+						<div class="mui-input-row mui-checkbox mui-left">
+						  <input name="checkbox1" value="Item 1" type="checkbox"> 
+						</div>
+						<div class="shop_img">
+							<img src="img/2.jpg" alt="" />
+						</div>
+						<div class="shop_right">
+							<span>Mr.Bear宠宠熊   狗狗衣服秋冬装小狗宠物贵宾衣服</span>
+							<br />
+							<p>
+								<span>颜色分类：黄色两脚动物款</span>
+							</p>
+						
+							<p>
+								<span class="jiage">￥29.9</span>
+								<span class="shuliang">×1</span>
+							</p>
+								
+							
+						</div>
+					</div>
+					
+				</div>
+				
+				<!--<div class="st_list">
+					<div class="mui-input-row mui-checkbox mui-left">
+					  <label>狗狗一家亲 &nbsp;></label>
+					  <input name="checkbox1" value="Item 1" type="checkbox">
+					  <div class="edit">
+					  	<a href="javascript:;">领劵</a>
+					  	|
+					  	<a href="javascript:;">编辑</a>
+					  </div>
+					</div>
+					<div class="store">
+						<div class="mui-input-row mui-checkbox mui-left">
+						  <input name="checkbox1" value="Item 1" type="checkbox"> 
+						</div>
+						<div class="shop_img">
+							<img src="img/2.jpg" alt="" />
+						</div>
+						<div class="shop_right">
+							<span>Mr.Bear宠宠熊   狗狗衣服秋冬装小狗宠物贵宾衣服</span>
+							<p>
+								<span>颜色分类：黄色两脚动物款</span>
+							</p>
+								
+							
+							<p>
+								<span class="jiage">￥29.9</span>
+								<span class="shuliang">×1</span>
+							</p>
+								
+							
+						</div>
+					</div>
+					
+				</div>
+				-->
+			</div>
+		</div>
+	
+	</div>
+					
+</div>
+
+
+
+<div id="my" class="menu">
+	<div id="my_show">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+					<!--这里放置真实显示的DOM内容-->
+				<div class="my_ban">
+					<div class="my_top">
+						<div class="my_left">
+							<a href="javascript:;">
+								<span class="mui-icon mui-icon-gear"></span>
+							</a>
+						</div>
+						<div class="my_right">
+							<a href="javascript:;">
+								<span class="mui-icon mui-icon-chat"></span>
+							</a>
+						</div>
+					</div>
+					<div class="my_circle">
+						
+					</div>
+					<div class="my_btn">
+						<a href="javascript:;">
+							<button type="button" class="mui-btn mui-btn-outlined">点击登录</button>
+						</a>
+
+						<div class="name">
+							<a href="javascript:;">
+								<span>点击去实名认证>></span>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+				<div class="message">
+					<a href="">
+						<div class="ziliao">
+							<span>我的资料</span>
+						</div>	
+					</a>
+					
+					<div class="line"></div>
+					<a href="">
+						<div class="zhanghao">
+							<span>我的账号</span>
+						</div>
+					</a>
+					
+				</div>
+				<div class="my_order">
+					<div class="my_title">
+						<sapn>我的订单</sapn>
+					</div>
+					<ul>
+						<li>
+							<a href="">
+								<span class="font payment"></span>
+								<p>代付款</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="font shipping"></span>
+								<p>代发货</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="font goods"></span>
+								<p>代收货</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="font evaluation"></span>
+								<p>评价</p>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<span class="font refund"></span>
+								<p>退款</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				
+				<div class="my_other">
+					<div class="other_s">
+						<ul>
+							<li>
+								<a href="">
+									<span class="font my_share"></span>
+									<p>我的分享</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="font my_coupons"></span>
+									<p>优惠券</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="font my_jifen"></span>
+									<p>积分</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="font my_shoucang"></span>
+									<p>收藏</p>
+								</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="">
+									<span class="font my_focus"></span>
+									<p>关注</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="font my_fankui"></span>
+									<p>意见反馈</p>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<span class="font my_kefu"></span>
+									<p>客服</p>
+								</a>
+							</li>
+						</ul>
+					
+					</div>
+					
+				</div>
+		
+		
+			</div>
+		</div>
+		
+	</div>
+	
+	
+</div>
+
+
+
+
+
+	<div class="tab" id=footer>	
+		<ul>
+			<li class="active-nav">
+				<div class="iconfont home"></div>
+				<p>首页</p>
+			</li>
+			<li>
+				<div class="iconfont fuwu"></div>
+            	<p>服务</p>
+			</li>
+			<li>
+				<div class="iconfont caozuo"></div>
+			</li>
+			<li>
+				<div class="iconfont car"></div>
+            	<p>购物车</p>
+			</li>
+			<li>
+				<div class="iconfont my"></div>
+            	<p>我的</p>
+			</li>
+		</ul>
+	</div>
+</body>
+<script>
+	
+</script>
+	
+	
+</html>

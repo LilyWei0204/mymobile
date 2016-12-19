@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/xiang.css" />
+    <script src="js/mui.min.js"></script>
+    <script src="js/zepto.min.js"></script> 
+	<script src="js/swiper.jquery.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/index.js"></script>
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	/****************滚动条********************/
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', {
+//				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});
+			/*myScroll1 = new IScroll('#wrapper1', {
+//				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});*/
+		}
+		
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+    </script>
+</head>
+<body>
+	<!--<div class="nav" id="header">
+		<a href="home.html">
+			<div class="left">
+				<span class="iconfont"></span>
+			</div>
+		</a>
+		
+		<div class="center">
+			特价秒杀
+		</div>
+		<div class="right">
+			<span class="iconfont"></span>
+		</div>
+	</div>-->
+	<div id="content">
+		<div class="mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="ban">
+					<div class="ban_top">
+						<a href="price.html">
+							<div class="ban_left">
+								&lt;
+							</div>
+						</a>
+						<a href="">
+							<div class="ban_right">
+								<span class="mui-icon mui-icon-chat"></span>
+							</div>
+						</a>
+						
+					</div>
+					
+				</div>
+				<div class="box">
+					<div class="text1">
+						<div class="left">
+							<div class="img">
+								
+							</div>
+							<span>【品优商城】狗狗磨牙发生耐咬发声球</span>
+							
+						</div>
+						<div class="line"></div>
+						<div class="right">
+							<span class="font"></span>
+							<p>分享</p>
+						</div>
+						
+					</div>	
+					<div class="text2">
+						<div class="inner">
+							<span>￥</span>
+							<span>19.</span>
+							<span>2</span>
+						</div>
+						
+					</div>
+					<div class="text3">
+						<div class="inner1">
+							<span>200km内包邮哦</span>
+							<span>月售:1万笔</span>
+						</div>	
+					</div>
+					<div class="text4">
+						<div class="inner3">
+							<img src="img/kuaidi.jpg" alt="" />
+							<span>23:00前付款，11月3日送达...></span>
+						</div>
+					</div>
+				</div>
+				<div class="pic">
+					
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <div class="swiper-slide slide1" style="width: 33.33%;">
+					        	<img src="img/price1.jpg" alt="" />
+					        </div>
+					        <div class="swiper-slide slide1" style="width: 33.33%;">
+					        	<img src="img/price1.jpg" alt="" />
+					        </div>
+					        <div class="swiper-slide slide1" style="width: 33.33%;">
+					        	<img src="img/price1.jpg" alt="" />
+					        </div>
+					        <div class="swiper-slide slide1" style="width: 33.33%;">
+					        	<img src="img/price1.jpg" alt="" />
+					        </div>
+					        <div class="swiper-slide slide1" style="width: 33.33%;">
+					        	<img src="img/price1.jpg" alt="" />
+					        </div>
+					        <div class="swiper-slide slide1" style="width: 33.33%;">
+					        	<img src="img/price1.jpg" alt="" />
+					        </div>
+					    </div>
+					    
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+</body>
+<script>
+	var mySwiper = new Swiper('.swiper-container',{
+		watchSlidesProgress : true,
+        watchSlidesVisibility : true,
+		direction: 'horizontal',
+//  	loop: true,	
+		slidesPerView : 3
+//		slidesPerGroup : 3,
+		})
+</script>
+</html>

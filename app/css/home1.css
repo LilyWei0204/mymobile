@@ -1,0 +1,368 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 201092 */
+  src: url('../fonts/home/iconfont.eot');
+  src: url('../fonts/home/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/home/iconfont.woff') format('woff'),
+  url('../fonts/home/iconfont.ttf') format('truetype'),
+  url('../fonts/home/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: "iconfont";
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	font-size: 0.35rem;
+}
+body{
+	overflow: hidden;
+}
+
+#wrapper {
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	bottom: 48px;
+	left: 0;
+	width: 100%;
+	/*background: #ccc;*/
+	overflow: hidden;
+}
+
+#scroller {
+	position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+.scroller #swiper-container2{
+	width: 100%;
+}
+/*导航栏开始*/
+.nav{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 44px;
+	background: #f9a828;
+	position: relative;
+}
+.nav .left{
+	width: 0.3rem;
+	height:0.3rem;
+	/*border: 1px solid red;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	margin-left: 3%;
+	font-size: 0.8rem;
+	color: #fff;
+	line-height: 0.5rem;
+}
+.nav .left:before{
+	content: "\e606";
+}
+.nav .center{
+	width: 200px;
+	height: 30px;
+	/*background: red;*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+}
+.nav .center input{
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	border-radius: 1rem;
+} 
+.nav .right{
+	width: 30px;
+	height: 30px;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	right: 3%;
+	font-size: 0.8rem;
+	color: #fff;
+	line-height: 1rem;
+}
+.nav .right:before{
+	content: "\e637";
+}
+/*导航栏结束*/
+
+#swiper-container2{
+	width: 100%;
+}
+
+/*banner开始*/
+.banner{
+	width: 100%;
+	height: 3.97rem;
+	background: url(../img/ban1.jpg) no-repeat;
+	background-size:contain;
+}
+/*banner结束*/
+
+
+/*副导航开始*/
+.fu-nav{
+	width: 100%;
+	/*height: 3.28rem;*/
+}
+.fu-nav ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.fu-nav ul li{
+	width: 2.68rem;
+	height: 2rem;
+	background: #E9E9E9;
+	float: left;
+	position: relative;
+}
+.fu-nav ul:nth-child(2) li{
+	border-top: 1px solid #D7D7D7;
+	border-bottom: 1px solid #D7D7D7;
+}
+.fu-nav ul:nth-child(1) li:nth-child(1),.fu-nav ul:nth-child(1) li:nth-child(2),.fu-nav ul:nth-child(1) li:nth-child(3),.fu-nav ul:nth-child(2) li:nth-child(1),.fu-nav ul:nth-child(2) li:nth-child(2),.fu-nav ul:nth-child(2) li:nth-child(3){
+	border-right: 1px solid #d7d7d7;
+}
+
+.fu-nav ul li .tu{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	top: 0.3rem;
+	width: 1.06rem;
+	height: 50%;
+	border-radius: 50%;	
+}
+.fu-nav ul li .tu a img{
+	width: 100%;
+}
+.fu-nav ul li .title{
+	width: 100%;
+	height: 30%;
+	position: absolute;
+	bottom: 0;
+	/*background: red;*/
+	font-size: 0.35rem;
+	text-align: center;
+}
+.price{
+	background: #d92e30;
+}
+.tuan{
+	background:#de641b ;
+}
+.food{
+	background:#e57445 ;
+}
+.play{
+	background:#a5d15b;
+}
+.hosptal{
+	background:#fa6969 ;
+}
+.close{
+	background:#9ab1fe;
+}
+.bash{
+	background:#5ec9f6;
+}
+.more{
+	background:#c8cdce;
+}
+/*副导航结束*/
+
+
+/*猜你喜欢开始*/
+.guess{
+	width: 100%;
+}
+.guess .title{
+	width: 100%;
+	height: 38px;
+	background: #f9a828;
+	line-height: 38px;
+	font-size: 0.5rem;
+}
+.guess .title .left{
+	float: left;
+	margin-left: 30px;
+}
+.guess .title .left .like{
+	padding-left: 0.2rem;
+	color: #FA676D;
+}
+.guess .title .left .like:before{
+	content: "\e605";
+}
+.guess .title .left span:nth-child(1){
+	color:#fff;
+}
+.guess .title .right{
+	float: right;
+	margin-right: 30px;
+}
+.guess .title .right span{
+	color: #F0DECA;
+} 
+
+.guess .content{
+	width: 100%;
+}
+.guess .content .pic{
+	width: 95%;
+	margin: 0 auto;
+	
+}
+.guess .content .pic ul{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.guess .content .pic .one{
+	margin-top: 14px;
+	margin-bottom: 18px;
+}
+.guess .content .pic .two{
+	margin-bottom: 14px;
+}
+.guess .content .pic .one li{
+	width: 3.12rem;
+	height: 3.40rem;
+}
+.guess .content .pic .one li img{
+	width: 100%;
+}
+.guess .content .pic .two li{
+	width: 2.38rem;
+	height: 2.7rem;
+}
+.guess .content .pic .two li img{
+	width: 100%;
+}
+/*猜你喜欢结束*/
+
+/*底部选项卡开始*/
+.tab{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 2;
+	width: 100%;
+	height: 1.5rem;
+	background: #F5F6F3;
+	border-top: 1px solid #CFCFCF ;
+}
+
+
+ * 
+ //选项卡效果
+.tab .swiper-container-nav{
+	width: 100%;
+	height: 100%;
+}
+.tab  .swiper-nav{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.tab .swiper-container-nav .swiper-nav .nav_footer{
+	width: 2.1rem;
+	height: 100%;
+	float: left;
+	text-align: center;
+	
+}
+.tab .swiper-container-nav .swiper-nav .nav_footer .iconfont{
+	line-height: 30px;
+}
+
+
+
+
+
+.active-nav{
+	color: #F9A828;
+}
+.tab .home{
+	font-size: 0.8rem;
+	padding-top: 0.1rem;
+}
+.tab  .home:before{
+	content: "\e610";
+}
+
+.tab  .fuwu{
+	font-size: 0.7rem;
+	padding-top: 0.1rem;
+}
+.tab  .fuwu:before{
+	content: "\e600";
+}
+.tab  .caozuo{
+	padding-top: 0.3rem;
+	font-size: 1.3rem;
+	color: #FFCA61;
+}
+.tab  .caozuo:before{
+	content: "\e622";
+}
+
+.tab .car{
+	font-size: 0.7rem;
+}
+.tab  .car:before{
+	content: "\e612";
+}
+.tab  .my{
+	font-size: 0.7rem;
+}
+.tab  .my:before{
+	content: "\e66e";
+}
+/*底部选项卡结束*/
+

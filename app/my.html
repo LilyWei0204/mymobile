@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/my.css" />
+    <script src="js/mui.min.js"></script>
+    <script src="js/zepto.min.js"></script> 
+	<script src="js/swiper.jquery.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script src="js/index.js"></script>
+	
+    
+    <script type="text/javascript" charset="UTF-8">
+      	mui.init();
+      	
+      	
+      	
+      	
+/****************滚动条********************/
+		var myScroll;
+		function loaded () {
+			myScroll = new IScroll('#wrapper', {
+//				scrollbars: true,
+				mouseWheel: true,
+				interactiveScrollbars: true,
+				shrinkScrollbars: 'scale',
+				fadeScrollbars: true
+			});
+		}
+		
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+</script>
+</head>
+<body onload="loaded()">
+	
+	<div id="wrapper">
+		<div class="scroller" id="scroller">
+			
+			<div class="swiper-container" id="swiper-container2">
+        		<div class="swiper-wrapper">
+					
+					<div class="swiper-slide">
+						
+						<div class="banner">
+							<div class="top">
+								<div class="left">
+									<span class="mui-icon mui-icon-gear"></span>
+								</div>
+								<div class="right">
+									<span class="mui-icon iconfont xinxi"></span>
+								</div>
+							</div>
+							<div class="touxiang">
+								
+							</div>
+							<div class="btn">
+								<button type="button" class="mui-btn mui-btn-outlined">点击登录</button>
+							</div>
+
+							<div class="renzheng">
+								<a href="">点击去实名认证>></a>
+							</div>
+						</div>
+						<div class="message">
+							<div class="ziliao">
+								<a href="">我的资料</a>
+							</div>
+							<div class="line"></div>
+							<div class="zhanghao">
+								<a href="">我的账号</a>
+							</div>
+						</div>
+						
+						
+						
+						
+						
+					</div>
+					
+					<!--<div class="swiper-slide">
+						<a href="fuwu.html"></a>
+					</div>
+	            	<div class="swiper-slide">3</div>
+					<div class="swiper-slide">4</div>
+					<div class="swiper-slide">5</div>
+	-->
+				</div>
+				
+			</div>
+			
+			
+			
+		</div>
+	</div>
+	
+	<div class="tab" id=footer>
+		
+		<div class="swiper-container  swiper-container-horizontal swiper-container-nav" id="swiper-container1">
+			<div class="swiper-wrapper swiper-nav">
+				<div class="swiper-slide ">
+					<div class="slide nav_footer">
+						<div class="iconfont home"></div>
+						<p>首页</p>
+					</div>	
+				</div>
+            	<div class="swiper-slide">
+            		<div class="slide nav_footer">
+            			<div class="iconfont fuwu"></div>
+            			<p>服务</p>
+            		</div>
+            	</div>
+            	<div class="swiper-slide">
+            		<div class="slide nav_footer">
+            			<div class="iconfont caozuo"></div>
+            		</div>
+            	</div>
+            	<div class="swiper-slide">
+            		<div class="slide nav_footer">
+            			<div class="iconfont car"></div>
+            			<p>购物车</p>
+            		</div>
+            	</div>
+            	<div class="swiper-slide active-nav">
+            		<div class="slide nav_footer">
+            			<div class="iconfont my"></div>
+            			<p>我的</p>
+            		</div>
+            	</div>
+            	
+			</div>
+		</div>
+	
+	</div>
+</body>
+<script>
+	
+	var mySwiper1 = new Swiper('#swiper-container1',{
+        watchSlidesProgress : true,
+        watchSlidesVisibility : true,
+        slidesPerView:5,
+        onTap: function(){
+            mySwiper2.slideTo( mySwiper1.clickedIndex)
+        }
+    })
+    /*var mySwiper2 = new Swiper('#swiper-container2',{
+        pagination: '.swiper-pagination',
+        onSlideChangeStart: function(){
+            updateNavPosition();
+        }
+    })
+        function updateNavPosition(){
+        $('#swiper-container1 .active-nav').removeClass('active-nav')
+        var activeNav = $('#swiper-container1 .swiper-slide').eq(mySwiper2.activeIndex).addClass('active-nav');
+        if (!activeNav.hasClass('swiper-slide-visible')) {
+            if (activeNav.index()>mySwiper1.activeIndex) {
+                var thumbsPerNav = Math.floor(mySwiper1.width/activeNav.width())-1
+                mySwiper1.slideTo(activeNav.index()-thumbsPerNav)
+            }
+            else {
+                mySwiper1.slideTo(activeNav.index());
+            }
+        }
+    }*/
+</script>
+</html>

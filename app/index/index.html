@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/swiper.css" />
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/index1.css" />
+	<script src="js/zepto.min.js"></script>
+	<script src="js/swiper.jquery.js"></script>
+	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/swiper.js"></script>
+	<script src="js/index.js"></script>
+	<!--<script src="js/iscroll.js"></script>-->
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		   	
+    </script>
+</head>
+<body>
+	<div class="nav_header">
+		<div class="iconfont lb"></div>
+		<div class="iconfont like"></div>
+	</div>
+	<div class="main_body">
+		<div class="swiper-container swiper-container-h" id="swiper-container2">
+        	<div class="swiper-wrapper">
+            	<div class="swiper-slide" style="height: 300%;">
+            		<div class="bigbox">
+            			<div class="girl">
+	            			<div class="mark_l">
+	            				<div class="mark">
+	            					<span>依然</span>
+	            					<span>20岁</span>
+	            					<div class="iconfont pos">四川</div>
+	            				</div>
+	            			</div>
+	            			<img src="img/girl1.png" alt="" />
+	            			<div class="hello">
+	            				<div class="hello_w">
+	            					<span>hi</span>
+	            				</div>
+	            			</div>
+	            		</div>
+            		    <div class="girl1">
+	            			<div class="mark_l">
+	            				<div class="mark">
+	            					<span>依然</span>
+	            					<span>20岁</span>
+	            					<div class="iconfont pos">四川</div>
+	            				</div>
+	            			</div>
+	            			<img src="img/girl3.jpg" alt="" />
+	            			<div class="hello">
+	            				<div class="hello_w">
+	            					<span>hi</span>
+	            				</div>
+	            			</div>
+	            		</div>
+            		    <div class="girl2">
+	            			<div class="mark_l">
+	            				<div class="mark">
+	            					<span>依然</span>
+	            					<span>20岁</span>
+	            					<div class="iconfont pos">四川</div>
+	            				</div>
+	            			</div>
+	            			<img src="img/girl2.jpg" alt="" />
+	            			<div class="hello">
+	            				<div class="hello_w">
+	            					<span>hi</span>
+	            				</div>
+	            			</div>
+	            		</div>
+            		
+            		</div>           		
+            	</div>
+            	<div class="swiper-slide">2</div>
+            	<div class="swiper-slide">3</div>
+            	<div class="swiper-slide">4</div>
+            	<div class="swiper-slide">5</div>
+        	</div>
+    	</div>       
+	</div>
+
+	
+	<div class="index_footer">
+			<div class="swiper-container  swiper-container-horizontal swiper-container-nav" id="swiper-container1">
+				<div class="swiper-wrapper swiper-nav">
+					<div class="swiper-slide active-nav">
+						<div class="slide nav_footer">
+							<div class="iconfont choo"></div>
+							<p>精选</p>
+						</div>	
+					</div>
+            		<div class="swiper-slide">
+            			<div class="slide nav_footer1">
+            				<div class="iconfont sear"></div>
+            				<p>搜索</p>
+            			</div>
+            		</div>
+            		<div class="swiper-slide">
+            			<div class="slide nav_footer2">
+            				<div class="iconfont mess"></div>
+            				<p>私信</p>
+            			</div>
+            		</div>
+            		<div class="swiper-slide">
+            			<div class="slide nav_footer3">
+            				<div class="iconfont find"></div>
+            				<p>发现</p>
+            			</div>
+            		</div>
+            		<div class="swiper-slide">
+            			<div class="slide nav_footer4">
+            				<div class="iconfont self"></div>
+            				<p>我</p>
+            			</div>
+            		</div>
+				</div>
+			</div>
+		</div>
+	
+</body>
+<script>
+// var mySwiper1 = new Swiper('#swiper-container1',{
+//      
+//  })
+var mySwiper1 = new Swiper('#swiper-container1',{
+        watchSlidesProgress : true,
+        watchSlidesVisibility : true,
+        slidesPerView:5,
+        onTap: function(){
+            mySwiper2.slideTo( mySwiper1.clickedIndex)
+        }
+    })
+    var mySwiper2 = new Swiper('#swiper-container2',{
+        pagination: '.swiper-pagination',
+        onSlideChangeStart: function(){
+            updateNavPosition();
+        }
+    })
+        function updateNavPosition(){
+        $('#swiper-container1 .active-nav').removeClass('active-nav')
+        var activeNav = $('#swiper-container1 .swiper-slide').eq(mySwiper2.activeIndex).addClass('active-nav');
+        if (!activeNav.hasClass('swiper-slide-visible')) {
+            if (activeNav.index()>mySwiper1.activeIndex) {
+                var thumbsPerNav = Math.floor(mySwiper1.width/activeNav.width())-1
+                mySwiper1.slideTo(activeNav.index()-thumbsPerNav)
+            }
+            else {
+                mySwiper1.slideTo(activeNav.index())
+            }
+        }
+    }
+</script>
+</html>

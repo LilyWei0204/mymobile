@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 201092 */
+  src: url('../fonts/home/iconfont.eot');
+  src: url('../fonts/home/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/home/iconfont.woff') format('woff'),
+  url('../fonts/home/iconfont.ttf') format('truetype'),
+  url('../fonts/home/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+	font-family: "iconfont";
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+body,html{
+	width: 100%;
+	height: 100%;
+	background: #E9E8E8;
+}
+a{
+	list-style: none;
+	text-decoration: none;
+	color: #000;
+}
+.top{
+	width: 100%;
+	/*height: 44px;*/
+	height: 1.5rem;
+	background: #FAA828;
+	/*line-height: 44px;*/
+	line-height: 1.5rem;
+	color: #fff;
+	text-align: center;
+	font-size: 0.5rem;
+}
+.top .back{
+	float: left;
+	margin-left: 3%;
+	color: #fff;
+}
+.back:before{
+	content: "\e616";
+}
+/*登录注册开始*/
+.content{
+	width: 85%;
+	height: 2.08rem;
+	box-sizing: border-box;
+	border-radius: 0.2rem;
+	background: #fff;
+	margin: 0.42rem auto;
+	/*position: relative;*/
+}
+
+.reset{
+	width: 85%;
+	margin: 0 auto;
+	padding-top: 0.3rem;
+	font-size:0.4rem;
+}
+.reset span{
+	float: right;
+	padding-right: 0.3rem;
+	color: #878787;
+}
+.login{
+	padding-top: 1rem;
+	width: 80%;
+	margin: 0 auto;
+	/*text-align: center;*/
+}
+.login .btn{
+	height: 1rem;
+	line-height: 0.1rem;
+}
+/*登录注册结束*/
+/*其他登录方式开始*/
+.other{
+	width: 100%;
+	margin-top: 40%;
+}
+.other .title{
+	width: 80%;
+	height: 0.5rem;
+	/*background: red;*/
+	margin: 0 auto;
+}
+.other .title .line{
+	width: 2.1rem;
+	height: 1px;
+	background: #E05B3C;
+	float: left;
+}
+.other .title .text{
+	float: left;
+	font-size: 0.3rem;
+	line-height: 0.1rem;
+	color: #878787;
+}
+.other .qita{
+	padding-top: 0.8rem;
+	width: 100%;
+	float: left;
+}
+.other .qita ul{
+	display: flex;
+	justify-content: space-around;
+}
+.other .qita ul li{
+	width: 1.8rem;
+	height: 1.8rem;
+	/*background: orange;*/
+	text-align: center;
+	float: left;
+	opacity: 0.8;
+	font-size: 0.8rem;
+}
+.other .qita ul .xinlang:before{
+	content: "\e60f";
+}
+.other .qita ul .teng:before{
+	content: "\e63d";
+}
+.other .qita ul .weixin:before{
+	content: "\e603";
+}
+.other .qita ul .friend:before{
+	content: "\e619";
+}
+
+/*其他登录方式结束*/
+

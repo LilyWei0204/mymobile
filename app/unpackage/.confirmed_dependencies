@@ -1,0 +1,83 @@
+{
+	"index.html": {
+		"resources": [
+			"css/index.css",
+			"js/swiper.jquery.js",
+			"js/swiper.animate1.0.2.min.js",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/animate.css",
+			"css/swiper.min.css",
+			"css/mui.min.css",
+			"js/index.js",
+			"js/jquery.js",
+			"home.html",
+			"loginup.html",
+			"img/yin1.jpg"
+		],
+		"refer": [
+			"home.html",
+			"loginup.html"
+		]
+	},
+	"home.html": {
+		"resources": [
+			"img/guess7.jpg",
+			"img/guess2.jpg",
+			"img/more.png",
+			"img/tuan.png",
+			"img/hosptal.png",
+			"img/play.png",
+			"js/swiper.js",
+			"img/guess4.jpg",
+			"img/guess1.jpg",
+			"css/home.css",
+			"img/price.png",
+			"img/close.png",
+			"img/guess6.jpg",
+			"img/guess5.jpg",
+			"img/food.png",
+			"img/ban1.jpg",
+			"img/guess3.jpg",
+			"img/bash.png",
+			"js/swiper.jquery.js",
+			"js/swiper.animate1.0.2.min.js",
+			"js/mui.min.js",
+			"js/zepto.min.js",
+			"css/mui.min.css",
+			"js/index.js",
+			"index.html",
+			"js/iscroll.js",
+			"fonts/home/iconfont.woff",
+			"img/ban2.jpg",
+			"fonts/mui.ttf",
+			"css/swiper.css",
+			"fonts/caitu/iconfont.woff",
+			"css/animate.css",
+			"fonts/order/iconfont.woff",
+			"img/ban3.jpg",
+			"fonts/caitu/iconfont.ttf"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"loginup.html": {
+		"resources": [
+			"img/login.jpg",
+			"css/loginup.css",
+			"js/swiper.js",
+			"js/swiper.jquery.js",
+			"js/swiper.animate1.0.2.min.js",
+			"js/zepto.min.js",
+			"js/index.js",
+			"fonts/home/iconfont.woff",
+			"home.html"
+		]
+	},
+	"xiang.html": {
+		"resources": [
+			"css/xiang.css"
+		]
+	}
+}
